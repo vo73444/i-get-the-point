@@ -20,6 +20,8 @@ class Point{
 
     float getY();
 
+    float operator[](char cord);
+
     void prettyPrint();
 
 };

@@ -22,6 +22,12 @@ int main(){
 
     assert(abs(p4.getX() - (-9.6)) < 0.1 && abs(p4.getY() - (-29.4)) < 0.1);
 
+    float my_x = p['x'];
+
+    float my_y = p['y'];
+
+    assert(my_x == p.getX() && my_y == p.getY());
+
     cout << "Test Passed!\n";
 
     return 0;

@@ -73,6 +73,18 @@ float Point::getY(){
     return y_cord;
 }
 
+float Point::operator[](char cord){
+    if(cord == 'x' || cord == 'X'){
+        return x_cord;
+    }
+
+    else if(cord == 'y' || cord == 'Y'){
+        return y_cord;
+    }
+
+    return 0;
+}
+
 void Point::prettyPrint(){
     cout << "(" << x_cord << ", " << y_cord << ")";
 }
