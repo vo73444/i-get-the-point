@@ -52,6 +52,18 @@ Point Point::operator/(Point p){
     return mid;
 }
 
+Point Point::operator*(double d){
+    float x;
+    float y;
+
+    x = x_cord * d;
+    y = y_cord * d;
+
+    Point scale = Point(x, y);
+
+    return scale;
+}
+
 float Point::getX(){
     return x_cord;
 

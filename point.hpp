@@ -14,6 +14,8 @@ class Point{
 
     Point operator/(Point p);
 
+    Point operator*(double d);
+
     float getX();
 
     float getY();
